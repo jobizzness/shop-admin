@@ -7,6 +7,100 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <base href="/">
+  
+  <link rel="icon" href="/assets/images/favicon.ico">
+  
+  <!-- See https://goo.gl/OOhYW5 -->
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- See https://goo.gl/qRE0vM -->
+  <meta name="theme-color" content="#3f51b5">
+  
+  <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="My App">
+  
+  <!-- Add to homescreen for Safari on iOS -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="My App">
+  
+  <!-- Homescreen icons -->
+  <link rel="apple-touch-icon" href="/assets/images/manifest/icon-48x48.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/manifest/icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="96x96" href="/assets/images/manifest/icon-96x96.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/images/manifest/icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="/assets/images/manifest/icon-192x192.png">
+  
+  <!-- Tile icon for Windows 8 (144x144 + tile color) -->
+  <meta name="msapplication-TileImage" content="images/manifest/icon-144x144.png">
+  <meta name="msapplication-TileColor" content="#3f51b5">
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <!-- Default twitter carddsds -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@username">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="my-app">
+  <meta property="og:image" content="/assets/images/manifest/icon-144x144.png" />
+  
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+  
+    :root {
+      --app-primary-color: #393433;
+      --app-secondary-color: #d80b6d;
+      --app-dark-text-color: black;
+      --app-light-text-color: #F6F6F6;
+      --app-section-even-color: #f7f7f7;
+      --app-section-odd-color: white;
+  
+      --app-header-background-color: var(--app-primary-color);
+      --app-header-text-color: var(--app-light-text-color);
+      --app-header-selected-color: var(--app-secondary-color);
+  
+      --app-drawer-background-color: var(--app-secondary-color);
+      --app-drawer-text-color: var(--app-light-text-color);
+      --app-drawer-selected-color: #78909C;
+  
+      --mdc-theme-primary: var(--app-primary-color);
+      --mdc-theme-secondary: var(--app-secondary-color);
+    }
+  
+    body {
+      font-family: Roboto, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+      line-height: 1.5;
+      text-rendering: geometricPrecision;
+      -webkit-font-smoothing: antialiased;
+      margin: 0;
+      height: 100%;
+      background-color: var(--app-light-text-color);
+    }
+  
+    .fake-header {
+      background-color: var(--app-primary-color);
+      height: 114px;
+      width: 100%;
+    }
+  
+    .fake-main {
+      min-height: 100vh;
+    }
+  
+    @media only screen and (max-device-width: 480px) and (min-device-width: 320px) {
+      .fake-header {
+        height: 64px;
+      }
+    }
+  </style>
 </head>
 <body>
   <remi-app></remi-app>

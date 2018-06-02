@@ -1,0 +1,18 @@
+
+<mat-drawer-container class="example-container">
+    <mat-drawer mode="side" opened="true">
+        Drawer Content
+    </mat-drawer>
+    <mat-drawer-content>
+        <mat-toolbar color="primary">
+            <mat-toolbar-row>
+                <mat-icon class="example-icon" (click)="sidenav.toggle()">favorite</mat-icon>
+                <span class="flex"></span>
+                <mat-icon class="example-icon">delete</mat-icon>
+            </mat-toolbar-row>
+        </mat-toolbar>
+        <main>
+            Main
+        </main>
+    </mat-drawer-content>
+</mat-drawer-container>
