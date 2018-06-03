@@ -1,0 +1,68 @@
+<section class="page-component pad">
+  <header class="pad">
+      <h1 class="heading-3">Dashboard</h1>
+  </header>
+  <div class="main-content pad">
+    <!-- Summary items -->
+    <div class="dashboard-summary">
+        <summary-item></summary-item>
+        <summary-item></summary-item>
+        <summary-item></summary-item>
+        <summary-item></summary-item>
+    </div>
+
+    <!-- Section with graphs -->
+    <section class="grid-2--col">
+      <!-- card A -->
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-header--title">Daily Sales</h3>
+          <p class="card-header--desc">Check out each collumn for more details</p>
+        </div>
+        <div class="card-body">
+          <div class="chart-wrapper">
+            <div>
+              <canvas #salesChartCanvas></canvas>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Card B -->
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-header--title">Monthly Profit</h3>
+          <p class="card-header--desc">Profit Share between customers</p>
+        </div>
+        <div class="card-body">
+          <div class="chart-wrapper" style="height:120px;">
+      
+          </div>
+        </div>
+      </div>
+      <!-- Card C -->
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-header--title">Daily Visits</h3>
+          <p class="card-header--desc">Check out each collumn for more details</p>
+        </div>
+        <div class="card-body">
+          <div class="chart-wrapper" style="height:120px;">
+      
+          </div>
+        </div>
+      </div>
+      <!-- Card D -->
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-header--title">Top Customers</h3>
+          <p class="card-header--desc">Check out each collumn for more details</p>
+        </div>
+        <div class="card-body">
+          <div class="chart-wrapper" style="height:120px;">
+      
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>

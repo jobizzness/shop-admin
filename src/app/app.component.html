@@ -1,7 +1,38 @@
 
 <mat-drawer-container class="example-container">
     <mat-drawer mode="side" opened="true">
-        Drawer Content
+        <mat-toolbar></mat-toolbar>
+        <nav role="navigation">
+            <a routerLink="/dashboard" class="nav-link--item">
+                <mat-icon>home</mat-icon>
+                Dashboard
+            </a>
+            <a routerLink="#" class="nav-link--item">
+                <mat-icon>home</mat-icon>
+                Shop
+            </a>
+            <a routerLink="#" class="nav-link--item">
+                <mat-icon>home</mat-icon>
+                Orders
+            </a>
+            <a routerLink="#" class="nav-link--item">
+                <mat-icon>home</mat-icon>
+                Media
+            </a>
+            <a routerLink="#" class="nav-link--item">
+                <mat-icon>home</mat-icon>
+                Messages
+            </a>
+            <a routerLink="#" class="nav-link--item">
+                <mat-icon>home</mat-icon>
+                Invoice
+            </a>
+            <a routerLink="#" class="nav-link--item">
+                <mat-icon>home</mat-icon>
+                Settings
+            </a>
+        </nav>
+        
     </mat-drawer>
     <mat-drawer-content>
         <mat-toolbar color="primary">
@@ -12,7 +43,7 @@
             </mat-toolbar-row>
         </mat-toolbar>
         <main>
-            Main
+            <router-outlet></router-outlet>
         </main>
     </mat-drawer-content>
 </mat-drawer-container>
